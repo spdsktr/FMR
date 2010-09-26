@@ -1,0 +1,38 @@
+<div class="my-scene-fade-bottom" x-mojo-scroll-fade="bottom"></div>
+<div id="main">
+	<div class="palm-page-header brandHeader" id="brandHeader">
+		<div class="palm-page-header-wrapper">
+			<div class="title" id="title">List Details</div>
+		</div>
+	</div>
+	<div class="brandHeaderSpacer" id="brandHeaderSpacer"></div>
+
+	<div id="bgAlbumns" style="position:fixed; margin-top:50px; z-index:10; margin-left:-100px; opacity:0.10; -webkit-palm-mouse-target: ignore;">
+		<div id="imgAlbum1" style="position:absolute; margin-left:-20px; z-index:8; -webkit-palm-mouse-target: ignore;">
+			<div id="imgAlbumOverlay1" style="width:246px; height:246px; z-index:4; -webkit-palm-mouse-target: ignore;">
+				<img src="images/default-album-art-list-view.png" id="imgAlbumImage1" border="0" style="width:195px; height:195px; -webkit-transform:rotate(8deg); margin-top:25px; margin-left:30px; z-index:3; border:0px; -webkit-palm-mouse-target: ignore;" />
+			</div>
+		</div>
+		<div id="imgAlbum2" style="position:absolute; margin-left:150px; z-index:9; -webkit-palm-mouse-target: ignore;">
+			<div id="imgAlbumOverlay2" style="width:246px; height:246px; z-index:4; -webkit-palm-mouse-target: ignore;">
+				<img src="images/default-album-art-list-view.png" id="imgAlbumImage2" border="0" style="width:200px; height:200px; -webkit-transform:rotate(-8deg); margin-top:21px; margin-left:21px; z-index:3; border:0px; -webkit-palm-mouse-target: ignore;" />
+			</div>
+		</div>
+		<div id="imgAlbum3" style="position:absolute; margin-left:320px; z-index:8; -webkit-palm-mouse-target: ignore;">
+			<div id="imgAlbumOverlay3" style="width:246px; height:246px; z-index:4; -webkit-palm-mouse-target: ignore;">
+				<img src="images/default-album-art-list-view.png" id="imgAlbumImage3" border="0" style="width:195px; height:195px; -webkit-transform:rotate(8deg); margin-top:25px; margin-left:25px; z-index:3; border:0px; -webkit-palm-mouse-target: ignore;" />
+			</div>
+		</div>
+	</div>
+
+	<div id="results" style="z-index:500; width:320px; height:380px;" x-mojo-element="Scroller">
+		<table class='palm-list-section-label'><tr><td class=left></td><td class=label><span id="resultsnumber">&nbsp;&nbsp;</span> Results</td><td class=right></td></tr></table>	
+		<div class="palm-list" style="z-index:500;">
+			<div x-mojo-element="FilterList" id="resultslist" style="z-index:500;"></div>
+		</div>
+		<br /><br /><br /><br />
+	</div>
+	<br /><br /><br /><br />
+	
+	<div id="info" style="font-size:small;"></div>
+</div>

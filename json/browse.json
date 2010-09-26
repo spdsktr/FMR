@@ -1,0 +1,26 @@
+{
+ "resultCount":20,
+ "results": [
+{"listname":"Sound Effects", "songs":"500", "filename":"sound_effects.json"},
+{"listname":"Misc Ringtones", "songs":"500", "filename":"misc_ringtones1.json"},
+{"listname":"Misc Ringtones 2", "songs":"500", "filename":"misc_ringtones2.json"},
+{"listname":"Comedy", "songs":"500", "filename":"comedy.json"},
+{"listname":"Wedding Related", "songs":"500", "filename":"weddings.json"},
+{"listname":"Nature/Ambient Sounds", "songs":"500", "filename":"nature_sounds.json"},
+{"listname":"Holidays", "songs":"500", "filename":"holidays.json"},
+{"listname":"Greatest Songs of All Times", "songs":"191", "filename":"greatest_ever.json"},
+{"listname":"Greatest Music Videos", "songs":"85", "filename":"greatest_music_videos.json"},
+{"listname":"Greatest Songs of the 2000s", "songs":"176", "filename":"top_2000.json"},
+{"listname":"Greatest Songs of the 1990s", "songs":"193", "filename":"top_90s.json"},
+{"listname":"Greatest Songs of the 1980s", "songs":"93", "filename":"top_80s.json"},
+{"listname":"Greatest Songs of the 1970s", "songs":"196", "filename":"top_70s.json"},
+{"listname":"Greatest Songs of the 1960s", "songs":"244", "filename":"top_60s.json"},
+{"listname":"Greatest Songs of the 1950s", "songs":"185", "filename":"top_50s.json"},
+{"listname":"Greatest Rap/Hip-Hop Songs", "songs":"83", "filename":"greatest_rap-hiphop.json"},
+{"listname":"Greatest Punk Rock Songs", "songs":"92", "filename":"greatest_punkrock.json"},
+{"listname":"Greatest Country Music Songs", "songs":"166", "filename":"greatest_country.json"},
+{"listname":"Greatest 'Classic' R&B Songs", "songs":"166", "filename":"greatest_classic_randb.json"},
+{"listname":"Greatest Reggae Songs", "songs":"186", "filename":"greatest_regae.json"},
+{"listname":"Greatest Blues Songs", "songs":"95", "filename":"greatest_blues.json"}
+]
+}

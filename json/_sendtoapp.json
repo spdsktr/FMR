@@ -1,0 +1,13 @@
+{"resultCount":11, "results": [
+		{"appname":"GeoStrings", "appid":"com.hedami.geostrings", "appicon":"images/appicons/icon-geostrings.png", "appminversion":"1.1.2", "appurl":""},
+		{"appname":"PowerNap", "appid":"com.kevinforeman.powernap", "appicon":"images/appicons/icon-powernap.png", "appminversion":"1.3.0"},
+		{"appname":"foursquare", "appid":"com.foursquare.foursquare", "appicon":"images/appicons/icon-foursquare.png", "appminversion":"1.2.0", "appurl":""},
+		{"appname":"TXT Group", "appid":"com.hattczech.txtgroup", "appicon":"images/appicons/icon-txtgroup.png", "appminversion":"1.1.0", "appurl":""},
+		{"appname":"Sports Live!", "appid":"com.moresol.live.sports", "appicon":"images/appicons/icon-sports.png", "appminversion":"1.4.2", "appurl":""},
+		{"appname":"Baseball Live!", "appid":"com.moresol.live.baseball", "appicon":"images/appicons/icon-baseball.png", "appminversion":"1.4.2", "appurl":""},
+		{"appname":"Basketball Live!", "appid":"com.moresol.live.basketball", "appicon":"images/appicons/icon-basketball.png", "appminversion":"1.4.2", "appurl":""},
+		{"appname":"Hockey Live!", "appid":"com.moresol.live.hockey", "appicon":"images/appicons/icon-hockey.png", "appminversion":"1.4.2", "appurl":""},
+		{"appname":"Football Live!", "appid":"com.moresol.live.football", "appicon":"images/appicons/icon-football.png", "appminversion":"1.4.2", "appurl":""},
+		{"appname":"US Soccer Live!", "appid":"com.moresol.live.ussoccer", "appicon":"images/appicons/icon-ussoccer.png", "appminversion":"1.4.2", "appurl":""},
+		{"appname":"UK Football Live!", "appid":"com.moresol.live.ukfootball", "appicon":"images/appicons/icon-ukfootball.png", "appminversion":"1.4.2", "appurl":""}
+	]}

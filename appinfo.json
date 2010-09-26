@@ -1,0 +1,15 @@
+{
+	"id": "com.jamesharris.musicringtones",
+	"version": "1.5.1",
+	"vendor": "Open Source Initiative",
+	"vendorurl": "http://www.na.com",
+	"type": "web",
+	"main": "index.html",
+	"title": "Free Music Ringtones",
+	"icon": "icon.png",
+	"smallicon": "icon-32.png",
+	"splashicon": "icon-256.png",
+	"splashBackground": "images/splash/bg.png",
+    "theme": "light",
+	"noWindow": "true"
+}

@@ -1,0 +1,183 @@
+#abody .main2{background-color:#FFFFFF; background-image:url(../images/bg.png)}
+#abody .alt2{background-color:#FFFFFF;}
+
+#title{font-size:18px; padding-left:12px; margin-left:0px; margin-top:2px;}
+.palm-page-header{border-bottom:1px solid #000000;}
+.palm-page-header-wrapper{border-bottom:1px solid #000000; margin-bottom:-2px; background-image:url(../images/header-bg-sliver.png); background-position:right; background-repeat:no-repeat;}
+.brandHeader{border-bottom:1px solid #000000; top:0px; width:100%; position:fixed; z-index:100; min-height:50px; z-index:9999;}
+.brandHeaderSpacer{height:50px; clear:both;}
+.filterNotice{ padding:3px; font-size:10px; text-align:center;}
+
+#info{font-size:8px; background-color:#FFFFCC;}
+
+
+#app-footer {margin-top:10px; font-size:13px; text-align:center; margin-bottom:20px;}
+#header, #footer{margin:8px; font-size:14px;}
+
+.btn{font-size:12px;}
+.my-scene-fade-top {position: fixed; top: 0; z-index: 100000;height: 54px; width: 100%; background: url(../images/my-scene-fade-top.png) top center repeat-x; -webkit-palm-mouse-target: ignore;}
+.my-scene-fade-bottom {position: fixed; bottom: 0; z-index: 100000;height: 54px; width: 100%; background: url(../images/my-scene-fade-bottom.png) bottom center repeat-x; -webkit-palm-mouse-target: ignore;}
+.my-scene-fade-lyrics-top {position: fixed; top: 60px; z-index: 100000; height: 54px; width: 100%; background: url(../images/my-scene-fade-top-arrow.png) top center repeat-x; -webkit-palm-mouse-target: ignore;}
+.my-scene-fade-lyrics-bottom {position: fixed; bottom: 60px; z-index: 100000; height: 54px;  width: 100%; background: url(../images/my-scene-fade-bottom-arrow.png) bottom center repeat-x; -webkit-palm-mouse-target: ignore;}
+
+.mimicLabel{float:right; color:#1F75BF; font-size:14px; text-transform:uppercase; margin-right:8px; margin-top:8px;}
+
+#loadSpinner{margin-top:50px; margin-left:90px; position:fixed;}
+#spinnertext{text-align: center; padding-top: 122px; font-size:15px; margin-left:-90px; width:278px; padding-left:20px; padding-right:20px; text-align:center;}
+
+.palm-body-text{font-size:14px;}
+
+
+/* Splash Screen */
+.splItem		{font-size:12px; color:#007DC6; background-color:#DBEDF8; text-align:center; padding-bottom:10px; padding-top:10px; width:200px; margin-left:auto; margin-right:auto; margin-bottom:5px; -webkit-border-radius: 4px;}
+.splItemAlt		{font-size:12px; color:#007DC6; background-color:#FED977; text-align:center; padding-bottom:10px; padding-top:10px; width:200px; margin-left:auto; margin-right:auto; margin-bottom:5px; -webkit-border-radius: 4px;}
+#searchnotice	{font-size:12px; float:left; margin-left:15px;}
+/*#searchbutton	{float:right; margin-right:15px;}*/
+
+
+
+/* PILL */
+.header-source				 {position: relative; float: right; margin: 8px 8px 0px 0px; font-size: 14px; text-transform: uppercase; font-weight: bold; height: 35px; line-height: 33px; border-width: 0px 22px 0px 16px; -webkit-border-image: url('../images/selector-header-blue.png') 0 22 0 16 stretch stretch; -webkit-box-sizing: border-box; z-index:999;}
+.header-source.selected		 {-webkit-border-image: url('../images/selector-headerpress-blue.png') 0 22 0 16 stretch stretch;}
+.header-source-hit-target	 {position: absolute;top: -10px;left: -35px;right: -25px;height: 52px;}
+.header-selector			 {margin-left:-5px; padding-top:-2px; padding-right: 2px; background: transparent; display: inline-block; min-width: 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; color:#FFFFFF; font-size:12px;}
+.header-down-arrow			 {background: transparent; float: right; display: inline-block; background: url('../images/header-arrow-down.png') right center no-repeat; height: 36px; margin-right: -5px; width: 12px; }
+
+
+
+/* Connection Alerts */
+#connection, .connection{width:280px; padding:8px; margin-top:10px; margin-left:auto; margin-right:auto; font-size:12px; border:2px solid #FF0000; -webkit-border-radius:6px; background-color:#FFFFC4;}
+#connection-img{color:#FF0000; font-weight:bold; width:16px; float:left; font-size:24px;}
+#connection-msg{color:#666666;}
+#diagnoseIssues{font-size:12px; color:#0000FF; text-decoration:underline; text-align:center; padding-top:5px; margin-top:10px;}
+
+
+
+
+
+/* Search Options */
+#search-types{clear:both; font-size:13px; padding-left:20px; margin-bottom:-5px; text-align:center;}
+.search-select{color:#000; float:left; padding-right:10px; font-weight:bold; padding-top:2px; padding-bottom:2px;}
+.search-options{color:#007DC6; float:left; padding-right:10px; padding-left:10px; padding-top:2px; padding-bottom:2px; text-align:center;}
+.search-unselected{background-color:none;}
+.search-selected{background-color:#CCCCCC; -webkit-border-radius: 4px;}
+
+
+
+/* Send to App List */
+.app-row		{height:45px; /*background-image:url(../images/list-item-bg.png); background-position:center; background-position:bottom; background-repeat:no-repeat;*/}
+.app-icon		{margin-top:2px; margin-left:4px; width:40px; height:40px; background-size:40px 40px; background-repeat:no-repeat; float:left;}
+.app-name		{margin:2px 0px 0px 0px; padding:4px 0px 0px 10px; font-size:16px; word-wrap:break-word; color:#333333;}
+.app-version	{margin:0px 0px 0px 0px; padding:0px 0px 20px 10px; font-size:13px; color:#666666;}
+
+
+
+/* Search Results List */
+.list-row		{height:54px; /*background-image:url(../images/list-item-bg.png); background-position:center; background-position:bottom; background-repeat:no-repeat;*/}
+.list-cover		{margin-top:2px; margin-left:4px; width:45px; height:45px; background-size:45px 45px; background-repeat:no-repeat; float:left; -webkit-border-top-right-radius:12px; -webkit-border-bottom-left-radius:12px;}
+.list-track		{margin:2px 0px 0px 0px; padding:6px 0px 0px 10px; font-size:16px; word-wrap:break-word; color:#333333;}
+.list-artist	{margin:0px 0px 0px 0px; padding:0px 0px 20px 10px; font-size:13px; color:#666666;}
+
+
+
+/* More Apps */
+.moreRow{padding:8px;}
+.moreName{font-size:16px; font-weight: bold; color: #333; margin-left:58px; margin-right:40px; margin-top:5px;}
+.moreDescription{font-size:13px; margin-left:58px; color:#777;}
+.morePrice{float:right; color:#FF0000; font-size:13px; font-weight:bold; text-transform:uppercase; letter-spacing:1px; margin-top:5px;}
+.moreStars{}
+.moreIconDiv{float:left; margin:0px; padding:0px;}
+.moreIcon{margin:0px; padding:0px; height:48px; width:48px;}
+
+#resultsGrid.gridCol{width: 33%; float:left;}
+#resultsGrid.gridImg{height:45px; width:45px;}
+#resultsGrid.gridText{font-size:10px; color:#666666;}
+#resultsGrid.gridClear{clear:both;}
+
+
+/* Song Details */
+.cardsScrollerContainer		{width: 1235px;}
+.cardsScrollerItem			{float: left; width:305px; padding-left:-20px; padding-right:-20px; margin-left:-5px; margin-right:-5px;}
+.card_Wrapper				{width:98%; margin-left:auto; margin-right:auto; width:300px;}
+
+
+.noticeFavoritesShow{
+	background-color:#FCED3F; border:2px solid #F68B2E; z-index:999999;
+	-webkit-border-top-right-radius:8px;-webkit-border-bottom-right-radius:8px;
+	position:fixed;
+	font-size:11px; padding-left:20px; padding-right:6px; padding-top:7px; padding-bottom:7px;
+	width:115px; text-align:right;
+	-webkit-transition: all 0.25s linear;
+	margin-left:-2px;
+	
+}
+.noticeFavoritesHide{
+	background-color:#FCED3F; border:2px solid #F68B2E; z-index:999999;
+	-webkit-border-top-right-radius:8px;-webkit-border-bottom-right-radius:8px;
+	position:fixed;
+	font-size:11px; padding-left:20px; padding-right:6px; padding-top:7px; padding-bottom:7px;
+	width:115px; text-align:right;
+	-webkit-transition: all 0.5s linear;
+	margin-left:-150px;
+}
+
+.noticePurchaseShow{
+	background-color:#67B11F; border:2px solid #41740E; z-index:999999;
+	-webkit-border-top-right-radius:8px;-webkit-border-bottom-right-radius:8px;
+	position:fixed;
+	font-size:13px; color:#FFFFFF; padding-left:20px; padding-right:6px; padding-top:7px; padding-bottom:7px;
+	width:150px; text-align:right;
+	-webkit-transition: all 0.25s linear;
+	margin-left:-2px;
+	
+}
+.noticePurchaseHide{
+	background-color:#67B11F; border:2px solid #41740E; z-index:999999;
+	-webkit-border-top-right-radius:8px;-webkit-border-bottom-right-radius:8px;
+	position:fixed;
+	font-size:13px; color:#FFFFFF; padding-left:20px; padding-right:6px; padding-top:7px; padding-bottom:7px;
+	width:150px; text-align:right;
+	-webkit-transition: all 0.5s linear;
+	margin-left:-190px;
+}
+
+
+.noticeFilterLoadShow{
+	z-index:999999; background-color:#666666; color:#FFFFFF; border:2px solid #000000;
+	-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;
+	position:fixed;
+	font-size:14px; color:#FFFFFF; padding:4px; text-align:center;
+	width:100px;
+	margin-right:25%; margin-left:25%;
+	-webkit-transition: all 0.25s linear;
+	top:-2px;
+}
+.noticeFilterLoadHide{
+	z-index:999999; background-color:#666666; color:#FFFFFF; border:2px solid #000000;
+	-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;
+	position:fixed;
+	font-size:14px; color:#FFFFFF; padding:4px; text-align:center;
+	width:100px;
+	margin-right:25%; margin-left:25%;
+	-webkit-transition: all 0.5s linear;
+	top:-50px;
+}
+
+
+
+
+.title-track{font-size:18px; margin-top:-4px; z-index:1;}
+.title-artist{font-size:14px;}
+.title-count{text-align:right; padding-right:10px; padding-bottom:3px; font-size:13px; font-weight:bold; width:55px; float:right; color:#333333;}
+.title-favorite{text-align:right; padding-right:18px; margin-top:-10px; width:20px; float:right; z-index:9999;}
+
+.view-img{width:75px; height:75px; /*background: url(../images/loading.png) no-repeat;*/}
+
+#view .title{font-size:16px;}
+.btnAmazon		{padding-left:10px; padding-right:10px; padding-top:10px; float:left;}
+.btnItunes		{padding-left:15px; padding-right:10px; padding-top:12px; float:left;}
+.btnYoutube		{padding-left:15px; padding-right:10px; padding-top:10px; float:left;}
+.btnEmail		{padding-left:15px; padding-right:10px; padding-top:10px; float:left;}
+.btnText		{padding-left:15px; padding-right:10px; padding-top:10px; float:left;}
+.btnLauncher	{padding-left:15px; padding-right:10px; padding-top:10px; float:left;}
+.btnFavorite	{padding-left:15px; padding-right:10px; padding-top:10px; float:left;}

@@ -1,0 +1,47 @@
+<div class="my-scene-fade-bottom" x-mojo-scroll-fade="bottom"></div>
+<div id="main">
+	<div class="palm-page-header brandHeader" id="brandHeader">
+		<div class="palm-page-header-wrapper">
+			<div class="title" id="title">Search for Ringtones</div>
+		</div>
+	</div>
+	<div class="brandHeaderSpacer" id="brandHeaderSpacer"></div>
+
+	<div x-mojo-element="Spinner" id="loadSpinner" name="loadSpinner">
+		<div id="spinnertext">Loading</div>
+	</div>
+
+	<div style="height:15px; clear:both;"></div>
+	<div id="search-types" align="center">
+		<div id="search-select" class="search-select">Search:</div>
+		<div id="search-all" class="search-options search-selected">All</div>
+		<div id="search-song" class="search-options search-unselected">Song</div>
+		<div id="search-artist" class="search-options search-unselected">Artist</div>
+		<div id="search-album" class="search-options search-unselected">Album</div>
+	</div>
+	<div style="clear:both"></div>
+	
+	<div class="palm-group unlabeled">
+		<div class="palm-list">
+			<div class="palm-row single">
+				<div x-mojo-focus-highlight="true" class="palm-row-wrapper textfield-group">
+					<div class="title">
+						<div x-mojo-element="TextField" class="truncating-text" id="searchterm"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="search-country" style="float:right; width:70px; font-size:11px; color:#1F75BF; text-decoration:underline; margin-right:20px; padding:5px; text-align:center;"></div>
+	<div align="center"><img src="images/design/search-button.png" id="searchbutton" style="text-align:center; padding-left:80px;" /></div>
+
+	<div id="results" style="display:none;">
+		<table class='palm-list-section-label'><tr><td class=left></td><td class=label><span id="resultsnumber">&nbsp;&nbsp;</span> Results</td><td class=right></td></tr></table>	
+		<div class="palm-list">
+			<div x-mojo-element="FilterList" id="resultslist"></div>
+		</div>
+		<div id="resultsGrid"></div>
+	</div>
+	
+	<div id="info" style="font-size:small;"></div>
+</div>

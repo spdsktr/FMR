@@ -1,0 +1,58 @@
+[
+    {"source": "/usr/palm/frameworks/mojoloader.js"},
+	{"source": "app/assistants/stage-assistant.js"},
+	{"source": "app/assistants/app-assistant.js"},
+    {"source": "javascript/common.js"},
+    {"source": "javascript/countries.js"},
+    {"source": "javascript/preferences.js"},
+	{"source": "app/models/metrix.js"},
+	{"source": "app/models/asyncWrappers.js"},
+	{
+        "scenes": "first",
+        "source": "app/assistants/first-assistant.js"
+    },
+    {
+        "scenes": "search",
+        "source": "app/assistants/search-assistant.js"
+    },
+    {
+        "scenes": "top100",
+        "source": "app/assistants/top100-assistant.js"
+    },
+    {
+        "scenes": "browse",
+        "source": "app/assistants/browse-assistant.js"
+    },
+    {
+        "scenes": "browselist",
+        "source": "app/assistants/browselist-assistant.js"
+    },
+    {
+        "scenes": "favorites",
+        "source": "app/assistants/favorites-assistant.js"
+    },
+    {
+        "scenes": "songs",
+        "source": "app/assistants/songs-assistant.js"
+    },
+    {
+        "scenes": "sendtoapp",
+        "source": "app/assistants/sendtoapp-assistant.js"
+    },
+    {
+        "scenes": "autoswap",
+        "source": "app/assistants/autoswap-assistant.js"
+    },
+    {
+        "scenes": "webosupgrade",
+        "source": "app/assistants/webosupgrade-assistant.js"
+    },
+    {
+        "scenes": "help",
+        "source": "app/assistants/help-assistant.js"
+    },
+    {
+        "scenes": "helpdetails",
+        "source": "app/assistants/helpdetails-assistant.js"
+    }
+]

@@ -1,0 +1,307 @@
+<div id="main">
+	<div class="palm-page-header brandHeader" id="brandHeader">
+		<div class="palm-page-header-wrapper">
+			<div class="title" id="title">
+				<div class="title-favorite" id="titleFavorite"><img src="images/favorites-16x16.png" id="titleFavoriteImage" style="z-index:200000; display:none;" /></div>
+				<div class="truncating-text title-track" id="titleTrack" style="z-index:100000;"></div>
+				<div style="clear:both"></div>
+				<div class="title-count" id="titleCount"></div>
+				<div class="truncating-text title-artist" id="titleArtist"></div>
+			</div>
+		</div>
+	</div>
+	<div class="brandHeaderSpacer" id="brandHeaderSpacer"></div>
+
+	<div id="menu-panel-container" style="top:150px;opacity:0;">
+		<div id="menu-panel" class="palm-menu-panel" x-mojo-menupanel="">
+			<div class="palm-menu-panel-fade-bottom" x-mojo-scroll-fade="bottom">
+				<div class="palm-menu-panel-fade-bottom-bg"></div>
+				<div class="palm-menu-panel-fade-bottom-arrow"></div>
+			</div>
+			<div class="palm-menu-panel-wrapper" x-mojo-element="Scroller" id="example-menu-panel">
+				<div class="palm-list">
+					<div x-mojo-element="FilterList" id="resultslist"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="connection" style="display:none;">
+		<div id="connection-img">!</div>
+		<div id="connection-msg"></div>
+	</div>
+
+	<div id="bgAlbumns" style="position:fixed; margin-top:50px; z-index:10; margin-left:-100px; opacity:0.15; -webkit-palm-mouse-target: ignore;">
+		<div id="imgAlbum1" style="position:absolute; margin-left:-20px; z-index:8;">
+			<div id="imgAlbumOverlay1" style="width:246px; height:246px; z-index:4;">
+				<img src="images/default-album-art-list-view.png" id="imgAlbumImage1" border="0" style="width:195px; height:195px; -webkit-transform:rotate(8deg); margin-top:25px; margin-left:30px; z-index:3; border:0px;" />
+			</div>
+		</div>
+		<div id="imgAlbum2" style="position:absolute; margin-left:150px; z-index:9;">
+			<div id="imgAlbumOverlay2" style="width:246px; height:246px; z-index:4;">
+				<img src="images/default-album-art-list-view.png" id="imgAlbumImage2" border="0" style="width:200px; height:200px; -webkit-transform:rotate(-8deg); margin-top:21px; margin-left:21px; z-index:3; border:0px;" />
+			</div>
+		</div>
+		<div id="imgAlbum3" style="position:absolute; margin-left:320px; z-index:8;">
+			<div id="imgAlbumOverlay3" style="width:246px; height:246px; z-index:4;">
+				<img src="images/default-album-art-list-view.png" id="imgAlbumImage3" border="0" style="width:195px; height:195px; -webkit-transform:rotate(8deg); margin-top:25px; margin-left:25px; z-index:3; border:0px;" />
+			</div>
+		</div>
+	</div>
+
+	<div id="noticeFavorites" class="noticeFavoritesHide" style="margin-top:290px">Marked as Favorite</div>
+	<div id="noticePurchase" class="noticePurchaseHide" style="margin-top:210px">Support your favorite Artists by purchasing the full length song.</div>
+	<div id="noticeFilterLoad" class="noticeFilterLoadHide" style="z-index:9999999">Loading</div>
+	
+	<div x-mojo-element="Scroller" id="scrollerId" style="z-index:500; margin-top:5px;">
+		<div class="scrollerContainer" style="width:1530px; color:#">
+			<div class="cardsScrollerItem" id="scrollerItem1">
+				<div id="practiceArea1" class="card_Wrapper" style="margin-left:auto; margin-right:auto;">
+					<div class="palm-group unlabeled">
+						<div class="palm-list">
+							<div class="palm-row first" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Song</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Artist</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Album</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Genre</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Cover</div>
+									<div class="title"><img src="" class="view-img" /></div>
+								</div>
+							</div>
+							<div class="palm-row last">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<img src="images/amazon-32x32.png" class="btnAmazon" />
+									<img src="images/itunes-32x32.png" class="btnItunes" />									
+									<img src="images/favorites-32x32.png" class="btnFavorite" />
+									<img src="images/youtube-32x32.png" class="btnYoutube" />
+									<!--<img src="images/email-32x32.png" class="btnEmail" />-->
+									<img src="images/launcher-32x32.png" class="btnLauncher" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cardsScrollerItem" id="scrollerItem2">
+				<div id="practiceArea2" class="card_Wrapper" style="margin-left:auto; margin-right:auto;">
+					<div class="palm-group unlabeled">
+						<div class="palm-list">
+							<div class="palm-row first" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Song</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Artist</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Album</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Genre</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-8px; margin-top:-8px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Cover</div>
+									<div class="title"><img src="" class="view-img" /></div>
+								</div>
+							</div>
+							<div class="palm-row last">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<img src="images/amazon-32x32.png" class="btnAmazon" />
+									<img src="images/itunes-32x32.png" class="btnItunes" />									
+									<img src="images/favorites-32x32.png" class="btnFavorite" />
+									<img src="images/youtube-32x32.png" class="btnYoutube" />
+									<!--<img src="images/email-32x32.png" class="btnEmail" />-->
+									<img src="images/launcher-32x32.png" class="btnLauncher" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cardsScrollerItem" id="scrollerItem3">
+				<div id="practiceArea" class="card_Wrapper card_Wrapper" style="margin-left:auto; margin-right:auto;">
+					<div class="palm-group unlabeled" id="view">
+						<div class="palm-list">
+							<div class="palm-row first" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper"
+									<div class="label" id="lblSong">Song</div>
+									<div class="title truncating-text" id="songtrack"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label" id="lblArtist">Artist</div>
+									<div class="title truncating-text" id="songartist"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label" id="lblAlbum">Album</div>
+									<div class="title truncating-text" id="songalbum"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label" id="lblGenre">Genre</div>
+									<div class="title truncating-text" id="songgenre"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-8px; margin-top:-8px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label" id="lblCover">Cover</div>
+									<div class="title"><img id="songcover" src="" class="view-img" /></div>
+								</div>
+							</div>
+							<div class="palm-row last">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<img src="images/amazon-32x32.png" id="songamazon" class="btnAmazon" />
+									<img src="images/itunes-32x32.png" id="songitunes" class="btnItunes" />									
+									<img src="images/favorites-32x32.png" id="songfavorite" class="btnFavorite" />
+									<img src="images/youtube-32x32.png" id="songyoutube" class="btnYoutube" />
+									<!--<img src="images/email-32x32.png" id="songemail" class="btnEmail" />-->
+									<img src="images/launcher-32x32.png" id="songlauncher" class="btnLauncher" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cardsScrollerItem" id="scrollerItem4">
+				<div id="practiceArea4" class="card_Wrapper" style="margin-left:auto; margin-right:auto;">
+					<div class="palm-group unlabeled">
+						<div class="palm-list">
+							<div class="palm-row first" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Song</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Artist</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Album</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Genre</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-8px; margin-top:-8px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Cover</div>
+									<div class="title"><img src="" class="view-img" /></div>
+								</div>
+							</div>
+							<div class="palm-row last">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<img src="images/amazon-32x32.png" class="btnAmazon" />
+									<img src="images/itunes-32x32.png" class="btnItunes" />									
+									<img src="images/favorites-32x32.png" class="btnFavorite" />
+									<img src="images/youtube-32x32.png" class="btnYoutube" />
+									<!--<img src="images/email-32x32.png" class="btnEmail" />-->
+									<img src="images/launcher-32x32.png" class="btnLauncher" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cardsScrollerItem" id="scrollerItem5">
+				<div id="practiceArea5" class="card_Wrapper" style="margin-left:auto; margin-right:auto;">
+					<div class="palm-group unlabeled">
+						<div class="palm-list">
+							<div class="palm-row first" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Song</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Artist</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Album</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Genre</div>
+									<div class="title truncating-text"></div>
+								</div>
+							</div>
+							<div class="palm-row" style="margin-bottom:-10px; margin-top:-10px;">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<div class="label">Cover</div>
+									<div class="title"><img src="" class="view-img" /></div>
+								</div>
+							</div>
+							<div class="palm-row last">
+								<div x-mojo-focus-highlight="true" class="palm-row-wrapper">
+									<img src="images/amazon-32x32.png" class="btnAmazon" />
+									<img src="images/itunes-32x32.png" class="btnItunes" />									
+									<img src="images/favorites-32x32.png" class="btnFavorite" />
+									<img src="images/youtube-32x32.png" class="btnYoutube" />
+									<!--<img src="images/email-32x32.png" class="btnEmail" />-->
+									<img src="images/launcher-32x32.png" class="btnLauncher" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="wifi" style="display:none; padding:12px;">
+		<div id="wifi-msg" style="font-size:12px;"><img src="images/no-wifi-36x32.png" style="float:left; padding-right:10px" />For best results, turn on Wifi and connect to a network with high speed Internet.</div>
+	</div>
+
+	<div id="info" style="display:none;"></div>
+	<audio id="audioListen" controls="false" x-palm-media-audio-class="media">
+</div>

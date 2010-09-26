@@ -1,0 +1,55 @@
+<div class="my-scene-fade-bottom" x-mojo-scroll-fade="bottom"></div>
+<div id="main">
+	<div class="palm-page-header brandHeader" id="brandHeader">
+		<div class="palm-page-header-wrapper">
+			<div class="title" id="title">Auto Swap Ringtones</div>
+		</div>
+	</div>
+	<div class="brandHeaderSpacer" id="brandHeaderSpacer"></div>
+
+	<div x-mojo-element="Spinner" id="loadSpinner" name="loadSpinner">
+		<div id="spinnertext">Loading</div>
+	</div>
+
+	<div style="font-size:12px; padding:10px;"</div>
+	
+	<div class="palm-group unlabeled">
+		<div class="palm-list">		
+			<div class="palm-row first">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+						<div class="mimicLabel" style="float:left; margin-left:4px;" id="lblSwapping">Enable Swapping</div>
+						<div x-mojo-element="ToggleButton" id="prefUpdateBackgroundEnable"></div>
+					</div>
+				</div>
+			</div>
+			<div class="palm-row">
+				<div class="palm-row-wrapper" x-mojo-focus-highlight="true">
+					<div id="prefUpdateInterval" x-mojo-element="ListSelector" class="right"></div>
+				</div>
+			</div>
+			<div class="palm-row last">
+				<div class="palm-row-wrapper" x-mojo-focus-highlight="true">
+					<div class="mimicLabel" style="float:left; margin-left:12px; margin-top:12px;" id="lblLastRan">Last Ran</div>
+					<div id="prefUpdateLast" class="title truncating-text" style="float:right; font-size:18px;"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div x-mojo-element="Button" id="Downloaded"></div>
+	
+	<table class='palm-list-section-label'><tr><td class=left></td><td class=label>About This Fetaure</td><td class=right></td></tr></table>
+	<div style="font-size:12px; padding:10px; line-height:150%;">
+		The 'Auto Swap Ringtone' feature changes your ringtone to a random one from your downloaded list at the frequency you choose.<br />
+		<br />
+		<strong>FEATURE LIMITATIONS:</strong><br />
+		<br />
+		1.) Swap ringtone after each call cannot be done.<br />
+		2.) The lowest interval possible is 5 minutes.<br />
+		3.) If you download ringtones with an older version of this app, please download them again. Only works with tones it has tracked.<br />
+		4.) You cannot auto swap to ringtones installed outside of this application.<br />
+		<br />
+	</div>
+	
+	<div id="info" style="font-size:small;"></div>
+</div>
